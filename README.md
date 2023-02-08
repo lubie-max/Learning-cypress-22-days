@@ -8,6 +8,9 @@ DAYS:
 >> 0-6    -All basic, its pros and cons , Nature. and making some tests and assertion.
 
 >> 7 - alerts handling
- 🟢cypress automatically handles the alerts.
+ 🟢 cypress automatically handles the alerts.>> Test3
 
- >>
+ >> 8 - child window handling -
+ 
+ 🟢 cypress doesn't support child windows or tabs, we have to manually code for it.>> Test3
+ 
