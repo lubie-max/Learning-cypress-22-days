@@ -10,7 +10,7 @@ DAYS:
 >> 7 - alerts handling
  🟢 cypress automatically handles the alerts.>> Test3
 
- >> 8 - child window handling -
+ >> 8 -tabs and child window handling -
  
  🟢 cypress doesn't support child windows or tabs, we have to manually code for it.>> Test3
  

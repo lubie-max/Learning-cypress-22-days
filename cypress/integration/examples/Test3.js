@@ -27,6 +27,16 @@ describe('test three- new window and alert handling',()=>{
         // the given function will be removeAttr=> which is jQuery function, removes an attribute from targated element.
 
         cy.get('#opentab').invoke('removeAttr','target').click()
+        cy.url().should('include',"rahulshettyacademy")
+
+        // for going back to the previos page
+        cy.go('back')
+
+        // checking weather it is redirected or not. W
+        cy.url().should('include',"Practice")
+
+
+
 
 
 
