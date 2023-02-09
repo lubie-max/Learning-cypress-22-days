@@ -9,6 +9,11 @@ describe('test three- new window and alert handling',()=>{
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
 
+        // cypress automatically handles the alerts.
+        //  To insure that the alert got handled. used .on() function.
+        //  which takes window events like alerts >>'window:alert' and a callback function which yeilds the response/returned value . 
+        // then checked that recieved str equels to the given str (alert msg). 
+
         // alerts
         cy.get('#alertbtn').click()
         cy.get('#confirmbtn').click()
@@ -26,14 +31,26 @@ describe('test three- new window and alert handling',()=>{
         // we will use invoke method from cypress, which allows to call a function.
         // the given function will be removeAttr=> which is jQuery function, removes an attribute from targated element.
 
-        cy.get('#opentab').invoke('removeAttr','target').click()
-        cy.url().should('include',"rahulshettyacademy")
+        // cy.get('#opentab').invoke('removeAttr','target').click()
+        // cy.url().should('include',"rahulshettyacademy")
+
+        // 2nd way to open child tab [ with prop() of jQuery()]
+        // cy.get('#opentab').invoke('prop','href').then((result)=>{
+        //     cy.log(result)
+        //     cy.visit()
+        // })
+
+        cy.get('#opentab').then((el)=>{
+            const url = el.prop('href')
+            cy.visit(url)
+            cy.log(el)
+        })
 
         // for going back to the previos page
-        cy.go('back')
+        // cy.go('back')
 
         // checking weather it is redirected or not. W
-        cy.url().should('include',"Practice")
+        // cy.url().should('include',"Practice")
 
 
 
