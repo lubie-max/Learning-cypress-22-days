@@ -24,7 +24,10 @@ describe('handling tables', () => { it('tables',()=>{
         if(elmnt.includes('Python')){
 
             cy.log('element',elmnt)
-            cy.get('tr td:nth-child(2)').eq(index).next()
+            cy.get('tr td:nth-child(2)').eq(index).next().then((price)=>{
+                    const priceText = price.text()
+                    expect(priceText).equal('25')
+            })
             // cy.log($list)
         }
     })
