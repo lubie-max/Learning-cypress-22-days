@@ -17,4 +17,8 @@ DAYS:
 
  >> 9 - handling tables.
  🟢 Learnt about .next() to access next sibling of <td>  >>  Test4.js
+ 🟢 Mouse hovering: code with jQuery function (show()) >>  Test5.js
+
+ >> 9 - handling IFrames.
+ 🟢 Learnt about cypress-iframe package in cypress  >>  Test6.js
  
