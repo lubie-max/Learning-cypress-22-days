@@ -1,7 +1,7 @@
 describe('handling mouse over', ()=>{
     it('Mouse Over',()=>{
 
-     // cypress doesn't support mouse overing, but has asset known as jQuery.
+     // cypress doesn't support mouse hovering, but has asset known as jQuery.
 
     cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 

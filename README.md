@@ -19,6 +19,6 @@ DAYS:
  🟢 Learnt about .next() to access next sibling of <td>  >>  Test4.js
  🟢 Mouse hovering: code with jQuery function (show()) >>  Test5.js
 
- >> 9 - handling IFrames.
+ >> 10 - handling IFrames.
  🟢 Learnt about cypress-iframe package in cypress  >>  Test6.js
- 
+ 🟢 Basic understanding of fixtures with new site.

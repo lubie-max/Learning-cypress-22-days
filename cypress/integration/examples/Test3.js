@@ -24,7 +24,7 @@ describe('test three- new window and alert handling',()=>{
             expect(str).equal('Hello , share this practice page and share your knowledge')
         })
 
-
+        // 1st way
         // handling new tabs 
         // cypress doesn't allow any new window access feature as other automation tools do.
         // so  we manually have to write  code to open new tab in same tab
@@ -35,22 +35,17 @@ describe('test three- new window and alert handling',()=>{
         // cy.url().should('include',"rahulshettyacademy")
 
         // 2nd way to open child tab [ with prop() of jQuery()]
-        // cy.get('#opentab').invoke('prop','href').then((result)=>{
-        //     cy.log(result)
-        //     cy.visit()
-        // })
-
-        cy.get('#opentab').then((el)=>{
+            cy.get('#opentab').then((el)=>{
             const url = el.prop('href')
             cy.visit(url)
             cy.log(el)
         })
 
         // for going back to the previos page
-        // cy.go('back')
+        cy.go('back')
 
         // checking weather it is redirected or not. W
-        // cy.url().should('include',"Practice")
+        cy.url().should('include',"Practice")
 
 
 
