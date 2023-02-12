@@ -22,3 +22,12 @@ DAYS:
  >> 10 - handling IFrames.
  🟢 Learnt about cypress-iframe package in cypress  >>  Test6.js
  🟢 Basic understanding of fixtures with new site.
+
+ >>11 -Fixtures and hooks
+ 🟢 getting data from other files(fixtures) and Hooks in cypress.>>TestWithFixture.js
+ 🔸 before() hook takes a callback function but doesn't support to arrow function. and also it() too. while using hook.
+
+ >>12 - JSON data with fixture and Validation
+ 🟢cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')
+ 🟢 2 way data binding and min-len validation. >>TestWithFixture.js
+ 🟢 Costum commands in cypress. folder = cypress/support/commands.js >>TestWithFixture.js

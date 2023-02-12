@@ -2,5 +2,7 @@
   "name": "Luba",
   "email": "luba@mail.com",
   "gender": "Female",
-  "password":"123456789"
+  "password":"123456789",
+  "products":["iphone","Blackberry","Nokia"]
+
 }

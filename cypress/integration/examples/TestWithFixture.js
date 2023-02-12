@@ -1,19 +1,17 @@
 /// <reference types="Cypress" />
 
-describe('User page', () => {
+describe('fixtures', () => {
 
   // arrow functions are not supported by hooks so in it() too.
 
     before( function() {
       // "this" points at the test context object
       cy.fixture('example').then((data) => {
-        // "this" is still the test context object
         this.data = data
       })
     })
   
-    // the test callback is in "function () { ... }" form
-    it('has user',function(){
+    it('Json fixture',function(){
       cy.visit('https://rahulshettyacademy.com/angularpractice/')
       cy.log(this.data.name)
 

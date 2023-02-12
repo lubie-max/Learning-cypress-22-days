@@ -19,6 +19,8 @@ Cypress.Commands.add("addProduct" , (product) => {
         }
       })
  })
+
+ 
 //
 //
 // -- This is a child command --
