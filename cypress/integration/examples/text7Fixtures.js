@@ -1,18 +1,35 @@
 /// <reference types="Cypress" />
 
+describe('User page', () => {
 
-describe('More Aboute Fixtures',()=>{
+  // arrow functions are not supported by hooks so in it() too.
 
-    it("first test", ()=>{
-        // fixtures are nothing but files which provides Test data for tast cases written in JSON format.
+    before( function() {
+      // "this" points at the test context object
+      cy.fixture('example').then((data) => {
+        // "this" is still the test context object
+        this.data = data
+      })
+    })
+  
+    // the test callback is in "function () { ... }" form
+    it('has user',function(){
+      cy.visit('https://rahulshettyacademy.com/angularpractice/')
+      cy.log(this.data.name)
 
+      cy.get('input[name="name"]').eq(0).type(this.data.name)
+      cy.get('input[name="email"]').type(this.data.email)
+      cy.get('input[type="password"]').type(this.data.password)
+      cy.get('select').select(this.data.gender)
+      cy.get('input[type="checkbox"]').check()
+      cy.get('input[type="checkbox"]').should('be.checked')
 
-        cy.visit('https://rahulshettyacademy.com/angularpractice/')
+      // checking two way data binding
+      cy.get('.ng-untouched').should('have.value',this.data.name)
 
-        // cy.get('input[name="name"]').eq(1).type(this.regdata.name)
-        cy.get('input[name="email"]').type('ls@mail.com')
-        cy.get("input[type='password']").type('12345678')
-        cy.get('input[type="checkbox"').check()
+      // checking minlen  of name
+      cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')
+      
 
     })
-})
+  })

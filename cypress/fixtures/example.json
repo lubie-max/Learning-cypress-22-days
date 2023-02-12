@@ -1,5 +1,6 @@
 {
   "name": "Luba",
   "email": "luba@mail.com",
-  "gender": "Female"
+  "gender": "Female",
+  "password":"123456789"
 }
