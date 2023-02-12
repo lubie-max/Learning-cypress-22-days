@@ -10,7 +10,15 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add("addProduct" , (product) => { 
+
+    cy.get('h4.card-title a').each((elm , index , list)=>{
+        if(elm.text().includes(product)){
+          cy.log(elm.text(), index)
+          cy.get('button.btn.btn-info').eq(index).click()
+        }
+      })
+ })
 //
 //
 // -- This is a child command --

@@ -30,6 +30,17 @@ describe('User page', () => {
       // checking minlen  of name
       cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')
       
+      //navigating to the shop
+      cy.get(':nth-child(2) > .nav-link').click()
+      cy.get('.col-lg-9 > .row')
+      // cy.get('h4.card-title a').each((elm , index , list)=>{
+      //   if(elm.text().includes("Blackberry")){
+      //     cy.log(elm.text(), index)
+      //     cy.get('button.btn.btn-info').eq(index).click()
+      //   }
+      // })
+
+      cy.addProduct('iphone')
 
     })
   })
