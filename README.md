@@ -27,15 +27,18 @@ DAYS:
  🟢 getting data from other files(fixtures) and Hooks in cypress.>>TestWithFixture.js
  🔸 before() hook takes a callback function but doesn't support to arrow function. and also it() too. while using hook.
 
+
+
  >>12 - JSON data with fixture and Validation
+
  🟢cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')
 
  🟢 2 way data binding and min-len validation. >>TestWithFixture.js
 
  🟢 Costum commands in cypress. folder = cypress/support/commands.js >>TestWithFixture.js
 
- 🟢 To Debug the tests we can use cy.pause() function or browser console to track the actions or snapshots from cypress itself.
+ 🟢 To Debug the tests we can use cy.pause() and cy.debug() functions or browser console to track the actions or snapshots from cypress itself.
 
 
 >> 13 : Implementing Page Object Design pattern 
- 🟢  >> 
+ 🟢  Making code more readable and scalable with Object Class >> cypress/integration/PageObjects.
