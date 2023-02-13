@@ -1,7 +1,7 @@
 Cypress is a next generation automation testing tool for Modern Web Apps.
 
-🟡 It's  Asynchronouse in nature.but we can write 
-text cases in Synchronouse fasion, this is on of its features.
+🟡 It's  Asynchronouse in nature. But we can write 
+text cases in Synchronouse fasion, this is one of its features.
 
 
 DAYS:
@@ -15,19 +15,23 @@ DAYS:
  
  🟢 cypress doesn't support child windows or tabs, we have to manually code for it. for that, used invoke() to yeild the function and function to be yeild was removeAttr() {jQuery} >> Test3.js
 
- >> 9 - handling tables.
+ >> 9 - Table handling.
  🟢 Learnt about .next() to access next sibling of <td>  >>  Test4.js
  🟢 Mouse hovering: code with jQuery function (show()) >>  Test5.js
 
- >> 10 - handling IFrames.
+ >> 10 -IFrames handling .
  🟢 Learnt about cypress-iframe package in cypress  >>  Test6.js
  🟢 Basic understanding of fixtures with new site.
 
- >>11 -Fixtures and hooks
+ >> 11 -Fixtures and hooks
  🟢 getting data from other files(fixtures) and Hooks in cypress.>>TestWithFixture.js
  🔸 before() hook takes a callback function but doesn't support to arrow function. and also it() too. while using hook.
 
  >>12 - JSON data with fixture and Validation
  🟢cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')
+
  🟢 2 way data binding and min-len validation. >>TestWithFixture.js
+
  🟢 Costum commands in cypress. folder = cypress/support/commands.js >>TestWithFixture.js
+
+ 🟢 To Debug the tests we can use cy.pause() function or browser console to track the actions or snapshots from cypress itself.
