@@ -14,10 +14,22 @@ Cypress.Commands.add("addProduct" , (product) => {
 
     cy.get('h4.card-title a').each((elm , index , list)=>{
         if(elm.text().includes(product)){
-          cy.log(elm.text(), index)
+          // cy.log(elm.text(), index) //sake of debugging
           cy.get('button.btn.btn-info').eq(index).click()
         }
       })
+ })
+
+
+ // Selecting country at checkout
+ Cypress.Commands.add("selectCountry",(countryName)=>{
+
+  cy.get('.suggestions').each((el , i , list)=>{
+
+    if(el.text().includes(countryName)){
+      cy.get('.suggestions li').eq(i).click()
+    }
+  })
  })
 
  

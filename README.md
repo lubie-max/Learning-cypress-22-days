@@ -35,3 +35,7 @@ DAYS:
  🟢 Costum commands in cypress. folder = cypress/support/commands.js >>TestWithFixture.js
 
  🟢 To Debug the tests we can use cy.pause() function or browser console to track the actions or snapshots from cypress itself.
+
+
+>> 13 : Implementing Page Object Design pattern 
+ 🟢  >> 
