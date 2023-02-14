@@ -5,7 +5,7 @@ class ShopObjects{
     }
 
     goForCheckOut(){
-        return cy.get(':nth-child(3) > :nth-child(5) > .btn').click()
+        return cy.get('button.btn-success')
     }
 
     goForContinueShopping(){
@@ -20,7 +20,7 @@ class ShopObjects{
     }
 
     goForPerchase(){
-        return cy.get('.ng-untouched > .btn').click()
+        return cy.get('.ng-untouched > .btn')
     }
 }
 

@@ -42,3 +42,6 @@ DAYS:
 
 >> 13 : Implementing Page Object Design pattern 
  🟢  Making code more readable and scalable with Object Class >> cypress/integration/PageObjects.
+
+>> 14: Setting environmental variables and automated shop page.
+🟢 automated shopping page. With full validation of products' pricess >>testWithFixture02.js
