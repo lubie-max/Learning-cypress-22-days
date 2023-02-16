@@ -45,3 +45,11 @@ DAYS:
 
 >> 14: Setting environmental variables and automated shop page.
 🟢 automated shopping page. With full validation of products' pricess >>testWithFixture02.js
+
+>> 15 : environmental variable // common url 
+ 🟢 calling an env var => Cypress.env('url') >>cypress.config.js
+
+ >> 16 :  cypress dashboard. and terminal commands 
+ 🟢 >> npx cypress run --record --key<key provoided by cypress dashboard>  --spec cypress/integration/examples/*.js --headed --browser chrome
+   🔰 above command runs the test in respected browser and --key is key provoided by cypress dashboard
+

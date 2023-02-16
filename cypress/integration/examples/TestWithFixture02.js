@@ -19,7 +19,8 @@ describe("Fixture,JSON with custom commands ", () => {
 
     // Cypress.config().defaultCommandTimeout(8000)
 
-    cy.visit("https://rahulshettyacademy.com/angularpractice/shop/");
+    // cy.visit("https://rahulshettyacademy.com/angularpractice/shop/");
+    cy.visit(Cypress.env('url'))
 
     //   this is not gonna work. 'products' is an array. need to iterate it.
 
