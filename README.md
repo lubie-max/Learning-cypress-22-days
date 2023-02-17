@@ -53,3 +53,10 @@ DAYS:
  🟢 >> npx cypress run --record --key<key provoided by cypress dashboard>  --spec cypress/integration/examples/*.js --headed --browser chrome
    🔰 above command runs the test in respected browser and --key is key provoided by cypress dashboard
 
+
+>> 17 :  command line and jenkins intro
+🟢 commands and script costumization.
+1️⃣ >> cypress run  ➡ runs the testcases in terminal (headless).
+2️⃣ >> cypress run --headed  ➡ runs the testcases in cypress window (headed).
+3️⃣ >> cypress run --browser chrome  ➡ runs the testcases in terminal (headless).
+
