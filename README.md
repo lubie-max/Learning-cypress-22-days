@@ -74,6 +74,8 @@ DAYS:
 
 🟢 commands and script costumization.
 1️⃣ >> cypress run  ➡ runs the testcases in terminal (headless).
+
 2️⃣ >> cypress run --headed  ➡ runs the testcases in cypress window (headed).
+
 3️⃣ >> cypress run --browser chrome  ➡ runs the testcases in terminal (headless).
 
