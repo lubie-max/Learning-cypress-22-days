@@ -8,7 +8,8 @@
     "openTest": "cypress open",
     "headedTest": "npm run test -- --headed",
     "inBrowser":"npm run test -- --browser chrome ",
-    "recordDashboardTest":"npm run test -- --record --key 02aba31e-071e-4714-8f7a-36ae6de0cfba"
+    "recordDashboardTest":"npm run test -- --record --key 02aba31e-071e-4714-8f7a-36ae6de0cfba",
+    "purchaseValidation": "npm run test -- --spec  cypress/integration/examples/TestWithFixture02.js/"
   },
   "author": "",
   "license": "ISC",
