@@ -7,8 +7,8 @@
     "test": "cypress run",
     "openTest": "cypress open",
     "headedTest": "npm run test -- --headed",
-    "inBrowser":"npm run test -- --browser chrome ",
-    "recordDashboardTest":"npm run test -- --record --key 02aba31e-071e-4714-8f7a-36ae6de0cfba",
+    "inBrowser": "npm run test -- --browser chrome ",
+    "recordDashboardTest": "npm run test -- --record --key 02aba31e-071e-4714-8f7a-36ae6de0cfba",
     "purchaseValidation": "npm run test -- --spec  cypress/integration/examples/TestWithFixture02.js/"
   },
   "author": "",
@@ -16,5 +16,9 @@
   "devDependencies": {
     "cypress": "^12.4.1",
     "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@cypress/browserify-preprocessor": "latest"
   }
 }

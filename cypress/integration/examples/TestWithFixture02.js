@@ -60,6 +60,8 @@ describe("Fixture,JSON with custom commands ", () => {
     shop.goForCheckOut().click()
 
 
+    //>>>>>>>
+
     shop.getCountry().type("Ind");
     cy.wait(2000)
 
