@@ -12,3 +12,11 @@ Feature: Validating shop page
     When I add items to cart
     And Validate the price of items
     Then select a country and purchase items.
+
+
+    Scenario: Fill the form.
+    Given I open Ecommerce Page
+    When I fill the form
+    |name|email|
+    |Shabana|shabana@mail.com|
+    Then Check minlength

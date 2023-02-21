@@ -1,7 +1,10 @@
 import {When, Then, Given} from "@badeball/cypress-cucumber-preprocessor"
 import ShopObjects from "../../../PageObjects/ShopObjects" ;
+import HomeObjects from "../../../PageObjects/HomeObjects" ;
 
 const shop = new ShopObjects();
+const home = new HomeObjects();
+
 
 
 before(function () {
@@ -21,13 +24,14 @@ before(function () {
 
 Given('I open Ecommerce Page' ,function(){
     // cy.visit(Cypress.env('url'))
-    cy.visit("https://rahulshettyacademy.com/angularpractice/shop/");
+    cy.visit("https://rahulshettyacademy.com/angularpractice/");
 
 })
 
 // When I add items to cart
 When("I add items to cart", function(){
     // cy.visit("https://rahulshettyacademy.com/angularpractice/");
+    home.navigateToShop().click();
 
     this.data.products.map((element) => {
         cy.addProduct(element);
@@ -82,4 +86,25 @@ Then("select a country and purchase items.",function(){
       cy.log("Purchased successfully!");
       expect(element.text().includes("Success")).to.be.true;
     });
+})
+
+//  Data Driven Scenario in Cucumber.
+When('I fill the form',function(dataTable){
+  home.getName().eq(0).type(dataTable.rawTable[1][0]);
+    home.getEmail().type(dataTable.rawTable[1][1]);
+    cy.get('input[type="password"]').type(this.data.password);
+    home.getGender().select(this.data.gender);
+    cy.get('input[type="checkbox"]').check();
+    cy.get('input[type="checkbox"]').should("be.checked");
+    cy.get(".ng-untouched").should("have.value", dataTable.rawTable[1][0]);
+
+})
+
+Then('Check minlength',()=>{
+  // checking minlen  of name
+  cy.get(":nth-child(1) > .form-control").should(
+    "have.attr",
+    "minlength",
+    "2"
+  );
 })
