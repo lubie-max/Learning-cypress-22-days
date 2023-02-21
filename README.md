@@ -46,7 +46,7 @@ like-
 
 # Days
 
-## 0-6 : All basic, its pros and cons , Nature. and making some tests and assertion.
+## 0-6 : All basic, its pros and cons , nature and making some tests and assertion.
 
 - 🔰 Each line/command returns a promise. >> test.js
 
@@ -60,7 +60,7 @@ like-
 
 ## 9 : Table handling.
 
-- 🔰 Learnt about .next() to access next sibling of <td> >> Test4.js
+- 🔰 Learnt about .next() to access next sibling of `<td>` >> Test4.js
 - 🔰 Mouse hovering: code with jQuery function (show()) >> Test5.js
 
 ## 10 : IFrames handling .
