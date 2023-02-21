@@ -18,7 +18,10 @@ To install Cypress.
 
 # Video
 
-<iframe width="560" height="315" src="cypressTut\cypress\videos\ecommerce.feature.mp4">
+<iframe width="560" height="315" src="cypressTut\cypress\videos\ecommerce.feature.mp4"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+>
+</iframe>
 
 
 🟡 It's Asynchronouse in nature. But we can write
