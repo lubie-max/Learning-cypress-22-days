@@ -4,33 +4,41 @@ Cypress is a next generation automation testing tool for Modern Web Apps.
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [Days](#days)
 - [Contributing](#contributing)
 - [License](#license)
 
 
-## Installation
+# Installation
 
-To install Cypress.
+## To install Cypress.
+- Official Docs ➡ [Cypress Docs](https://docs.cypress.io/guides/getting-started/installing-cypress)
+
+- >> npm install cypress --save-dev
+
+## To install cucumber
+- Official Doc ➡ [Cucumber](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
+
+- $ npm install cypress --save-dev
+
+## Jenkins Installation
+- Doc => [WAR file](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
+
+- >> java -jar jenkins.war
 
 
 
 
-# Media 
 
-<iframe width="560" height="315" src="\cypress\videos\ecommerce.feature.mp4"
-frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
->
-</iframe>
 
-![Screenshot of my project](\screenshots\ecommerce.feature\s1.png)
+
 
 
 
 🟡 It's Asynchronouse in nature. But we can write
 text cases in Synchronouse fasion, this is one of its features.
 
-DAYS:
+# Days  :
 
 > > 0-6 -All basic, its pros and cons , Nature. and making some tests and assertion.
 

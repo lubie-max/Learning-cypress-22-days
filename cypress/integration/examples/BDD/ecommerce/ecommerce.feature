@@ -1,7 +1,3 @@
-# import {When, Then} from "@badeball/cypress-cucumber-preprocessor"
-# const { When, Then, Given, Scenario, And } = require("@badeball/cypress-cucumber-preprocessor");
-
-# import "../step_definitions"
 
 Feature: Validating shop page
 
