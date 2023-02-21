@@ -97,8 +97,8 @@ like-
 
 ## 16 : cypress dashboard. and terminal commands.
 
-- 🔰 >> npx cypress run --record --key<key provoided by cypress dashboard> --spec cypress/integration/examples/\*.js --headed --browser chrome
-  🔰 above command runs the test in respected browser and --key is key provoided by cypress dashboard
+- 🔰 >> npx cypress run --record --key <key provoided by cypress dashboard> --spec cypress/integration/examples/\*.js --headed --browser chrome
+- 🔰 above command runs the test in respected browser and --key is key provoided by cypress dashboard
 
 ## 17 : command line and jenkins intro
 
