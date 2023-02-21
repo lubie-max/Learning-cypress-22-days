@@ -119,9 +119,9 @@ like-
 
 ⭕ ps: Let the plugins be installed.
 
--4️⃣ Next, Provoid, genereted password from cmd to the Jenkins(Localhost:8080).
+- 4️⃣ Next, Provoid, genereted password from cmd to the Jenkins(Localhost:8080).
 
--5️⃣ To create new job/item: Go to :
+- 5️⃣ To create new job/item: Go to :
 ➡ Dashboard
 ➡ New Item ➡ Provoid ProjectName , (Freestyle Project) for now.
 ➡Configuration: Check for parameterized Project(if neccessery).
