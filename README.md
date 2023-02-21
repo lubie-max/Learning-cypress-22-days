@@ -14,7 +14,7 @@ Cypress is a next generation automation testing tool for Modern Web Apps.
 ## To install Cypress.
 - Official Docs ➡ [Cypress Docs](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
-- >> npm install cypress --save-dev
+$ npm install cypress --save-dev
 
 ## To install cucumber
 - Official Doc ➡ [Cucumber](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
@@ -22,9 +22,9 @@ Cypress is a next generation automation testing tool for Modern Web Apps.
 - $ npm install cypress --save-dev
 
 ## Jenkins Installation
-- Doc => [WAR file](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
+-Official Doc ➡ [WAR file](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
 
-- >> java -jar jenkins.war
+-  $ java -jar jenkins.war
 
 
 
@@ -38,7 +38,7 @@ Cypress is a next generation automation testing tool for Modern Web Apps.
 🟡 It's Asynchronouse in nature. But we can write
 text cases in Synchronouse fasion, this is one of its features.
 
-# Days  :
+# Days 
 
 > > 0-6 -All basic, its pros and cons , Nature. and making some tests and assertion.
 
