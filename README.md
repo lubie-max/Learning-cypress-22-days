@@ -13,6 +13,14 @@ Cypress is a next generation automation testing tool for Modern Web Apps.
 
 To install Cypress.
 
+
+
+
+# Video
+
+<iframe width="560" height="315" src="cypressTut\cypress\videos\ecommerce.feature.mp4">
+
+
 🟡 It's Asynchronouse in nature. But we can write
 text cases in Synchronouse fasion, this is one of its features.
 
