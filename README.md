@@ -1,5 +1,18 @@
 Cypress is a next generation automation testing tool for Modern Web Apps.
 
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+
+## Installation
+
+To install Cypress.
+
 🟡 It's Asynchronouse in nature. But we can write
 text cases in Synchronouse fasion, this is one of its features.
 
@@ -94,5 +107,7 @@ and Save.
 🟢 Resolved the .sh issue with jenkins Script Runner(Execute Windows Batch commands) ➡ npm run %Script%.
 ps: do not use execute shell. Instead, use (Execute Windows Batch commands).
 
+
 >> 19:Brief about BDD(Behavior Driven Development) with Cucumber 
+🟢 Basic Syntax and Folder Structure ➡ npm run %Script%.
 
