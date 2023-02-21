@@ -23,7 +23,7 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
 >
 </iframe>
 
-![Screenshot of my project](\cypress\screenshots\ecommerce.feature\s1.png)
+![Screenshot of my project](cypress\screenshots\ecommerce.feature\s1.png)
 
 
 
