@@ -1,10 +1,9 @@
-Cypress is a next generation automation testing tool for Modern Web Apps.
-
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Days](#days)
+- [About](#about)
 
 
 
@@ -13,7 +12,7 @@ Cypress is a next generation automation testing tool for Modern Web Apps.
 ## To install Cypress.
 - Official Docs ➡ [Cypress Docs](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
-$ npm install cypress --save-dev
+- $ npm install cypress --save-dev
 
 ## To install cucumber
 - Official Doc ➡ [Cucumber](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
@@ -29,19 +28,32 @@ $ npm install cypress --save-dev
 
 
 
+# About
+
+## What is Cypress?
+
+- 🟡 Cypress is a next generation automation testing tool for Modern Web Apps.
+- 🟡 It's Asynchronouse in nature. But we can write
+test cases in Synchronouse fasion, this is one of its features.
+
+## Why one should use it?
+### Cypress is a battaries included testing framework which provoids different features.
+like-
+- Ease to Debug.
+- Time Traveling. It takes snapshots of each step.
+- Automating Waiting
+etc.
 
 
 
 
-
-🟡 It's Asynchronouse in nature. But we can write
-text cases in Synchronouse fasion, this is one of its features.
 
 # Days 
 
 ## 0-6 -All basic, its pros and cons , Nature. and making some tests and assertion.
 
 - 🔰 Each line/command returns a promise. >> test.js
+
 
 ## 7 - alerts handling.
 
