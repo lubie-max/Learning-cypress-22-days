@@ -5,8 +5,7 @@ Cypress is a next generation automation testing tool for Modern Web Apps.
 
 - [Installation](#installation)
 - [Days](#days)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 
 # Installation
@@ -40,7 +39,7 @@ text cases in Synchronouse fasion, this is one of its features.
 
 # Days 
 
-> > 0-6 -All basic, its pros and cons , Nature. and making some tests and assertion.
+## 0-6 -All basic, its pros and cons , Nature. and making some tests and assertion.
 
 🟢 Each line/command returns a promise. >> test.js
 
