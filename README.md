@@ -1,8 +1,9 @@
 ## Table of Contents
 
 - [Installation](#installation)
-- [Days](#days)
 - [About](#about)
+- [Dependencies](#dependencies)
+- [Days](#days)
 
 # Installation
 
@@ -43,6 +44,22 @@ like-
 - Automatic Waiting
 - Screenshots and Videos
   etc.
+
+
+
+# Dependencies
+`
+ "devDependencies": {
+    "cypress": "^12.4.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.3.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@cypress/browserify-preprocessor": "latest"
+  }
+  
+`
 
 # Days
 
@@ -143,4 +160,6 @@ and Save.
 
 ## 21 : Generating Reports with Html.
 
-<!-- - 🔰 Used Tags and Data in cumber >> ecommerce.js and ecommerce.feature -->
+- 🔰  installing mochawesome-reporter
+
+`>> npm i --save-dev cypress-mochawesome-reporter`

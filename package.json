@@ -15,7 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.4.1",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.3.0"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.4",

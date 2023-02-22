@@ -15,6 +15,9 @@ async function setupNodeEvents(on, config) {
 
 
 module.exports = defineConfig({
+
+  reporter: 'cypress-mochawesome-reporter',
+
   env:{
     url:"https://rahulshettyacademy.com/angularpractice/shop/"
   },
