@@ -17,6 +17,17 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
 
   reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+
+        charts: true,
+    
+        reportPageTitle: 'Cypress Inline Reporter',
+    
+        embeddedScreenshots: true, 
+    
+        inlineAssets: true, //Adds the asserts inline
+    
+      },
 
   env:{
     url:"https://rahulshettyacademy.com/angularpractice/shop/"

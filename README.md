@@ -1,29 +1,12 @@
 ## Table of Contents
 
-- [Installation](#installation)
 - [About](#about)
+- [Installation](#installation)
 - [Dependencies](#dependencies)
 - [Days](#days)
 
-# Installation
 
-## To install Cypress.
 
-- Official Docs ➡ [Cypress Docs](https://docs.cypress.io/guides/getting-started/installing-cypress)
-
-- $ npm install cypress --save-dev
-
-## To install cucumber
-
-- Official Doc ➡ [Cucumber](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
-
-- $ npm install cypress --save-dev
-
-## Jenkins Installation
-
--Official Doc ➡ [WAR file](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
-
-- $ java -jar jenkins.war
 
 # About
 
@@ -46,6 +29,27 @@ like-
   etc.
 
 
+
+
+# Installation
+
+## To install Cypress.
+
+- Official Docs ➡ [Cypress Docs](https://docs.cypress.io/guides/getting-started/installing-cypress)
+
+- $ npm install cypress --save-dev
+
+## To install cucumber
+
+- Official Doc ➡ [Cucumber](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
+
+- $ npm install cypress --save-dev
+
+## Jenkins Installation
+
+-Official Doc ➡ [WAR file](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/quick-start.md)
+
+- $ java -jar jenkins.war
 
 # Dependencies
 `
@@ -161,5 +165,6 @@ and Save.
 ## 21 : Generating Reports with Html.
 
 - 🔰  installing mochawesome-reporter
-
 `>> npm i --save-dev cypress-mochawesome-reporter`
+
+- 🔰 ![SS](ReadmeMedia\config.png)
