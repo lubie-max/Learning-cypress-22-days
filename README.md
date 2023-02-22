@@ -178,4 +178,4 @@ and Save.
 - 🔰  installing mochawesome-reporter
 `>> npm i --save-dev cypress-mochawesome-reporter`
 
-- 🔰 ![SS](\config.png)
+- 🔰 ![SS](cypressTut\config.png)
