@@ -52,7 +52,18 @@ like-
 - $ java -jar jenkins.war
 
 # Dependencies
-`
+
+` "devDependencies": {
+    "cypress": "^12.4.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.3.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@cypress/browserify-preprocessor": "latest"
+  } 
+
+
  "devDependencies": {
     "cypress": "^12.4.1",
     "cypress-iframe": "^1.0.1",
@@ -67,7 +78,7 @@ like-
 
 # Days
 
-## 0-6 : All basic, its pros and cons , nature and making some tests and assertion.
+## 0-6 : All basics, pros and cons , nature and making some tests and assertion.
 
 - 🔰 Each line/command returns a promise. >> test.js
 
@@ -167,4 +178,4 @@ and Save.
 - 🔰  installing mochawesome-reporter
 `>> npm i --save-dev cypress-mochawesome-reporter`
 
-- 🔰 ![SS](ReadmeMedia\config.png)
+- 🔰 ![SS](cypressTut\ReadmeMedia\config.png)
