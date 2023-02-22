@@ -174,8 +174,10 @@ and Save.
 - 🔰 Used Tags and Data in cumber >> ecommerce.js and ecommerce.feature
 
 ## 21 : Generating Reports with Html.
+#### Refer - [Blog for it](https://www.browserstack.com/guide/cypress-html-reporter)
 
 - 🔰  installing mochawesome-reporter
 `>> npm i --save-dev cypress-mochawesome-reporter`
 
-- 🔰 ![SS](https://github.com/lubie-max/Learning-cypress-22-days/blob/main/ReadmeMedia/config.png)
+- then add following code.
+ ![SS](https://github.com/lubie-max/Learning-cypress-22-days/blob/main/ReadmeMedia/config.png)
