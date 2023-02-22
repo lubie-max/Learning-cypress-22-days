@@ -9,17 +9,27 @@
     "headedTest": "npm run test -- --headed",
     "inBrowser": "npm run test -- --browser chrome ",
     "recordDashboardTest": "npm run test -- --record --key 02aba31e-071e-4714-8f7a-36ae6de0cfba",
-    "purchaseValidation": "npm run test -- --spec  cypress/integration/examples/TestWithFixture02.js/"
+    "purchaseValidation": "npm run test -- --spec  cypress/integration/examples/BDD/ecommerce/ecommerce.feature/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.4.1",
     "cypress-iframe": "^1.0.1",
-    "cypress-mochawesome-reporter": "^3.3.0"
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "multiple-cucumber-html-reporter": "^3.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/htmlResults/results.json"
+    }
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
-    "@cypress/browserify-preprocessor": "latest"
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "save-dev": "^0.0.1-security"
   }
 }

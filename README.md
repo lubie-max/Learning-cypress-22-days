@@ -173,11 +173,20 @@ and Save.
 
 - 🔰 Used Tags and Data in cumber >> ecommerce.js and ecommerce.feature
 
-## 21 : Generating Reports with Html.
-#### Refer - [Blog for it](https://www.browserstack.com/guide/cypress-html-reporter)
 
-- 🔰  installing mochawesome-reporter
-`>> npm i --save-dev cypress-mochawesome-reporter`
+## 21 : Generating JSON Reports with cypress-cucumber-preprocessor.
+#### Refer - [Blog for cypress-cucumber-preprocessor ](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/json-report.md)
 
-- then add following code.
- ![SS](https://github.com/lubie-max/Learning-cypress-22-days/blob/main/ReadmeMedia/config.png)
+- 1  installing cypress-cucumber-preprocessor
+`>> npm install -- save-dev cypress-cucumber-preprocessor `
+
+- 2 Installing formator plugins. [plugin docs](https://github.com/cucumber/json-formatter)
+
+-3 installing multiple-cucumber-html-reporter. [doc]
+`>> $ npm install multiple-cucumber-html-reporter --save-dev`
+
+
+
+
+-  then add following code.
+ ![package.json](https://github.com/lubie-max/Learning-cypress-22-days/blob/main/ReadmeMedia/HtmlReport.png)

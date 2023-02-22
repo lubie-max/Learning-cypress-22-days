@@ -1,0 +1,130 @@
+[
+  {
+    "description": "    Validating items in cart and Purchase the items",
+    "elements": [
+      {
+        "description": "",
+        "id": "validating-shop-page;add-,-validate-and-purchase-items.",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add , Validate and Purchase items.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open Ecommerce Page",
+            "result": {
+              "duration": 5325000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 8,
+            "name": "I add items to cart",
+            "result": {
+              "duration": 4943000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "Validate the price of items",
+            "result": {
+              "duration": 348000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 10,
+            "name": "select a country and purchase items.",
+            "result": {
+              "duration": 6534000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "validating-shop-page;fill-the-form.",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Fill the form.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I open Ecommerce Page",
+            "result": {
+              "duration": 668000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 15,
+            "name": "I fill the form",
+            "result": {
+              "duration": 1488000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "Shabana",
+                  "shabana@mail.com"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Check minlength",
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "validating-shop-page",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Validating shop page",
+    "uri": "cypress\\integration\\examples\\BDD\\ecommerce\\ecommerce.feature"
+  }
+]
