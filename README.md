@@ -5,9 +5,6 @@
 - [Dependencies](#dependencies)
 - [Days](#days)
 
-
-
-
 # About
 
 ## What is Cypress?
@@ -27,9 +24,6 @@ like-
 - Automatic Waiting
 - Screenshots and Videos
   etc.
-
-
-
 
 # Installation
 
@@ -53,28 +47,12 @@ like-
 
 # Dependencies
 
-` "devDependencies": {
-    "cypress": "^12.4.1",
-    "cypress-iframe": "^1.0.1",
-    "cypress-mochawesome-reporter": "^3.3.0"
-  },
-  "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
-    "@cypress/browserify-preprocessor": "latest"
-  } 
-
-
- "devDependencies": {
-    "cypress": "^12.4.1",
-    "cypress-iframe": "^1.0.1",
-    "cypress-mochawesome-reporter": "^3.3.0"
-  },
-  "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
-    "@cypress/browserify-preprocessor": "latest"
-  }
-  
-`
+` "cypress": "^12.4.1",`
+` "cypress-iframe": "^1.0.1",`
+` "multiple-cucumber-html-reporter": "^3.2.0"`
+` "@badeball/cypress-cucumber-preprocessor": "^15.1.4",`
+` "@cypress/browserify-preprocessor": "latest",`
+` "cypress-cucumber-preprocessor": "^4.3.1",`
 
 # Days
 
@@ -84,15 +62,15 @@ like-
 
 ## 7 : alerts handling.
 
-- 🔰 cypress automatically handles the alerts. To insure that the alert got handled. used .on() function. which takes window events like alerts >>'window:alert' and a callback function which yeilds the response/returned value . then checked that recieved str equels to the given str (alert msg). >> Test3.js
+- 🔰 cypress automatically handles the alerts. To insure that the alert got handled. used `.on()` function. which takes window events like alerts >>'window:alert' and a callback function which yeilds the response/returned value . then checked that recieved str equels to the given str (alert msg). >> Test3.js
 
 ## 8 : tabs and child window handling -
 
-- 🔰 cypress doesn't support child windows or tabs, we have to manually code for it. for that, used invoke() to yeild the function and function to be yeild was removeAttr() {jQuery} >> Test3.js
+- 🔰 cypress doesn't support child windows or tabs, we have to manually code for it. for that, used invoke() to yeild the function and function to be yeild was `removeAttr()` {jQuery} >> Test3.js
 
 ## 9 : Table handling.
 
-- 🔰 Learnt about .next() to access next sibling of `<td>` >> Test4.js
+- 🔰 Learnt about `.next()` to access next sibling of `<td>` >> Test4.js
 - 🔰 Mouse hovering: code with jQuery function (show()) >> Test5.js
 
 ## 10 : IFrames handling .
@@ -107,7 +85,7 @@ like-
 
 ## 12 : JSON data with fixture and Validation
 
-- 🔰cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')
+- 🔰`cy.get(':nth-child(1) > .form-control').should('have.attr','minlength','2')`
 
 - 🔰 2 way data binding and min-len validation. >>TestWithFixture.js
 
@@ -123,16 +101,20 @@ like-
 
 - 🔰 automated shopping page. With full validation of products' pricess >>testWithFixture02.js
 
-## 15 : environmental variable // common url.
+## 15 : environment variable // common url.
 
-- 🔰 calling an env var => Cypress.env('url') >>cypress.config.js
+- ">> cypress.config.js "
+
+- 🔰 calling an env var => `Cypress.env('url') >>cypress.config.js`
 
 ## 16 : cypress dashboard. and terminal commands.
 
-- 🔰 >> npx cypress run --record --key <key provoided by cypress dashboard> --spec cypress/integration/examples/\*.js --headed --browser chrome
-- 🔰 above command runs the test in respected browser and --key is key provoided by cypress dashboard
+- create or login to a cypress account/ grab the key and run following cmd.
 
-## 17 : command line and jenkins intro
+- 🔰 `>> npx cypress run --record --key <key provoided by cypress dashboard> --spec cypress/integration/examples/\*.js --headed --browser chrome `
+- 🔰 above command runs the test in respected browser and `--key` is key provoided by cypress dashboard
+
+## 17 : command lines
 
 - 🔰 commands and script costumization.
 
@@ -154,12 +136,12 @@ like-
 - 4️⃣ Next, Provoid, genereted password from cmd to the Jenkins(Localhost:8080).
 
 - 5️⃣ To create new job/item: Go to :
-➡ Dashboard
-➡ New Item ➡ Provoid ProjectName , (Freestyle Project) for now.
-➡Configuration: Check for parameterized Project(if neccessery).
-and Source Code Management- Git
-➡Build Step => Execute Windows Batch commands
-and Save.
+  ➡ Dashboard
+  ➡ New Item ➡ Provoid ProjectName , (Freestyle Project) for now.
+  ➡Configuration: Check for parameterized Project(if neccessery).
+  and Source Code Management- Git
+  ➡Build Step => Execute Windows Batch commands
+  and Save.
 
 - 🔰 Resolved the .sh issue with jenkins Script Runner(Execute Windows Batch commands) ➡ npm run %Script%.
   ps: do not use execute shell. Instead, use (Execute Windows Batch commands).
@@ -167,26 +149,27 @@ and Save.
 ## 19 : Brief about BDD(Behavior Driven Development) with Cucumber and setting env.
 
 - 🔰 Installation and env setup(files) ➡ [Docs](https://github.com/badeball/)
-- 🔰 Basic Syntax and Folder Structure.
+- 🔰 Basic Syntax and Folder Structure. >>cypress/integration/examples/BDD
 
 ## 20 : First BDD(Behavior Driven Development), Data Driven Testing and Tags, Test with Cucumber
 
 - 🔰 Used Tags and Data in cumber >> ecommerce.js and ecommerce.feature
 
-
 ## 21 : Generating JSON Reports with cypress-cucumber-preprocessor.
+
 #### Refer - [Blog for cypress-cucumber-preprocessor ](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/json-report.md)
 
-- 1  installing cypress-cucumber-preprocessor
-`>> npm install -- save-dev cypress-cucumber-preprocessor `
+- 1 installing cypress-cucumber-preprocessor
+  `>> npm install -- save-dev cypress-cucumber-preprocessor `
 
 - 2 Installing formator plugins. [plugin docs](https://github.com/cucumber/json-formatter)
 
 -3 installing multiple-cucumber-html-reporter. [doc]
 `>> $ npm install multiple-cucumber-html-reporter --save-dev`
 
+- Report.
+  ![package.json](https://github.com/lubie-max/Learning-cypress-22-days/blob/main/ReadmeMedia/HtmlReport.png)
 
 
-
--  then add following code.
- ![package.json](https://github.com/lubie-max/Learning-cypress-22-days/blob/main/ReadmeMedia/HtmlReport.png)
+# Advance Concepts.
+## 22 Intro to Cypress Intercept to Manage Http requests.
