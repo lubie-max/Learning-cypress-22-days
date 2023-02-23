@@ -21,7 +21,10 @@ describe('mocking APS',()=>{
             }).as('result') // stored the yeilded result with .as() method as result
 
             cy.get('.btn-primary').click()
-            cy.wait('@result')
+            cy.wait('@result').then(({request, response})=>{
+                cy.log(request.headers ,response.body.length)
+                cy.get('tr').should('have.length',response.body.length+1)
+            })
 
             cy.get('p').should('have.text',"Oops only 1 Book available")
 
