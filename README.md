@@ -172,4 +172,12 @@ like-
 
 
 # Advance Concepts.
-## 22 Intro to Cypress Intercept to Manage Http requests.
+## 22  Request Response With Cypress
+
+1. Intro to Cypress Intercept to Manage Http requests.(Dealing with Dynamic data.)
+
+2. Mock http responses for generating stub data to test edge Scenarios. >>cypress/integration/examples/mockingApi.js
+ * `cy.intercept({requestValue},{responseValue}) `
+        and this method yeilds a promise
+
+  

@@ -21,18 +21,7 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
 
-  // reporter: 'cypress-mochawesome-reporter',
-  // reporterOptions: {
-
-  //       charts: true,
-    
-  //       reportPageTitle: 'Cypress Inline Reporter',
-    
-  //       embeddedScreenshots: true, 
-    
-  //       inlineAssets: true, //Adds the asserts inline
-    
-  //     },
+ 
 
   env:{
     url:"https://rahulshettyacademy.com/angularpractice/shop/"
@@ -40,7 +29,8 @@ module.exports = defineConfig({
   e2e: {
    
     setupNodeEvents,
-    specPattern:'cypress/integration/examples/BDD/ecommerce/*.feature',
+    // specPattern:'cypress/integration/examples/BDD/ecommerce/*.feature', // for cucumber standerd
+    specPattern:'cypress/integration/examples/*.js',
   },
   projectId: "izo6ac",
   
