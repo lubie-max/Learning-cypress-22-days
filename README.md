@@ -177,7 +177,11 @@ like-
 1. Intro to Cypress Intercept to Manage Http requests.(Dealing with Dynamic data.)
 
 2. Mock http responses for generating stub data to test edge Scenarios. >>cypress/integration/examples/mockingApi.js
- * `cy.intercept({requestValue},{responseValue}) `
+ * updating/validating response. >>cypress/integration/examples/mockingApi.js
+ `cy.intercept({requestValue},{responseValue}) `
         and this method yeilds a promise
+
+  * updating url- >>cypress/integration/examples/mockingAPI2.js
+  `cy.intercept('method','url',req()) `
 
   
