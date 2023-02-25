@@ -184,4 +184,10 @@ like-
   * updating url- >>cypress/integration/examples/mockingAPI2.js
   `cy.intercept('method','url',req()) `
 
+  * handling api calls without browser with cypress.
+
+3. session Token and Local storeage.
+`with cy.request('method', 'url', {payload})`
+
+
   
