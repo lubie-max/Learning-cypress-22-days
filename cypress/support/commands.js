@@ -32,6 +32,22 @@ Cypress.Commands.add("addProduct" , (product) => {
   })
  })
 
+
+ 
+ Cypress.Commands.add("LoginAPI",()=>{
+   // https://rahulshettyacademy.com/api/ecom/auth/register
+  cy.request('POST','https://rahulshettyacademy.com/api/ecom/auth/login',
+  {userEmail: "shabana@mail.com", userPassword: "IamLubie9899"}).then((res)=>{
+    expect(res.status).to.eq(200)
+
+    Cypress.env('token',res.body.token)
+    
+    
+  })
+  
+ })
+
+ 
  
 //
 //
