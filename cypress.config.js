@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
 const browserify = require("@badeball/cypress-cucumber-preprocessor/browserify");
-const reportOption = require('cypress-mochawesome-reporter/plugin');
+// const reportOption = require('cypress-mochawesome-reporter/plugin');
 
 
 async function setupNodeEvents(on, config) {
