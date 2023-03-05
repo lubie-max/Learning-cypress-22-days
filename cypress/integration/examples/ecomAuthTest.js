@@ -54,7 +54,7 @@ describe('testing auth',()=>{
             .then(async(text) =>{
                 //    await cy.log(text)
                 let csv = await neatCsv(text)
-                cy.log("In in read file", csv)
+                // cy.log("In in read file", csv)
                 const actualProductCSV = csv[0]["Product Name"]
 
                 expect(productName).to.equal(actualProductCSV)

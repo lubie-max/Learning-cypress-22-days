@@ -187,10 +187,11 @@ like-
   * handling api calls without browser with cypress.
 
 3. session Token and Local storeage.
-`with cy.request('method', 'url', {payload})`
+` cy.request('method', 'url', {payload})`
 
 - Day 23(advance):
  * Login to an ecom site (cy.request)-> with cypress >> commands.js/ ecomAuthTest.js
+ *  Handled the .csv file with package- `"neat-csv"`
   
 
 
