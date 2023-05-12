@@ -32,6 +32,6 @@ module.exports = defineConfig({
     // specPattern:'cypress/integration/examples/BDD/ecommerce/*.feature', // for cucumber standerd
     specPattern:'cypress/integration/examples/*.js',
   },
-  projectId: "izo6ac",
+  projectId: "izo6ac"
   
 });

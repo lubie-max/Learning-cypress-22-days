@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 
-describe('mocking APS',()=>{
+describe('mocking APIS',()=>{
 
     it('testing shetty s site',()=>{
 
